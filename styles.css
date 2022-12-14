@@ -1,0 +1,207 @@
+html,
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	flex-direction: column;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Roboto, arial, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.25px;
+	background-color: rgb(26, 28, 29);
+}
+
+/* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
+
+header {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* About and Store links */
+header .nav-left {
+	display: flex;
+	padding-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+}
+
+/* Gmail --> Sign in */
+header .nav-right {
+	display: flex;
+	padding-top: 10px;
+}
+
+/* a tags in nav-left  */
+.nav-left a {
+	color: rgb(196, 195, 195);
+	text-decoration: none;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+.nav-left a:hover {
+	text-decoration: underline;
+}
+
+header .nav-right {
+	display: flex;
+	padding-right: 15px;
+}
+
+/* ul in nav-right */
+header .nav-right ul {
+	display: flex;
+}
+
+/* li in nav-right */
+header .nav-right ul li {
+	display: flex;
+	list-style: none;
+	padding: 10px 14px;
+}
+
+/* a tags in nav-right */
+.nav-right ul li a {
+	color: rgb(196, 195, 195);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* underline first 2 children in nav-right */
+header ul li:nth-child(1) a:hover {
+	text-decoration: underline;
+}
+
+header ul li:nth-child(2) a:hover {
+	text-decoration: underline;
+}
+
+/* placeholder for apps icon target */
+header ul li:nth-child(3) a {
+	color: rgb(48, 146, 234);
+	text-decoration: none;
+}
+
+/* targetting last child in nav-right */
+header ul li:last-child {
+	background: #004daa;
+	border-radius: 8px;
+	text-decoration: none;
+	text-shadow: 1px black;
+	padding: 10px 25px 10px 25px;
+}
+
+header .nav-right .nav-list .nav-separator-left li {
+	background: transparent;
+}
+
+header ul li:last-child:hover {
+	background: rgb(19, 0, 102);
+}
+
+.nav-separator-left {
+	display: flex;
+}
+
+.nav-separator-right {
+	display: flex;
+}
+
+.nav-separator-right li {
+	min-width: max-content;
+}
+
+.img-container {
+	display: flex;
+}
+
+img {
+	height: 200px;
+	margin: auto;
+}
+
+.search-bar {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.search-bar .fake-search-bar {
+	margin: auto;
+	height: 3rem;
+	width: 575px;
+	border-radius: 25px;
+	border: 1.5px solid rgb(75, 74, 74);
+}
+
+.fake-search-bar:hover {
+	background: rgb(36, 36, 36);
+}
+
+.icons-in-bar {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.icon {
+	display: flex;
+}
+
+.icon i {
+	color: white;
+}
+
+.inner-under-search {
+	display: flex;
+	margin: auto;
+	padding-top: 20px;
+	gap: 10px;
+}
+
+.inner-under-search button {
+	border-radius: 5px;
+	border: 1px solid rgb(102, 101, 101);
+	color: white;
+	background-color: rgb(37, 37, 37);
+	padding: 10px 20px 10px 20px;
+}
+
+.chromecast-thingy {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: start;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	margin-top: auto;
+	padding: 15px 40px;
+	background: rgb(21, 21, 21);
+}
+
+footer div {
+	background: transparent;
+	display: flex;
+	gap: 30px;
+}
+
+footer div a {
+	background: transparent;
+	text-decoration: none;
+	color: rgb(164, 164, 164);
+}
